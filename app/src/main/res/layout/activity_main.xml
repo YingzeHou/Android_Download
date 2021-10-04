@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/startButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="20dp"/>
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="start"
+        android:onClick="startDownload"/>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/startButton"
+        android:layout_alignRight="@id/startButton"
+        android:layout_marginTop="100dp"
+        android:text="stop"
+        android:onClick="stopDownload"/>
+
+    <ToggleButton
+        android:id="@+id/toggleswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/stopButton"
+        android:layout_alignRight="@id/stopButton"
+        android:layout_marginTop="120dp"/>
+
+
+</RelativeLayout>
